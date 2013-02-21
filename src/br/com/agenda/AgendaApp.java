@@ -36,6 +36,7 @@ public class AgendaApp extends Application {
 	private static final AbstractHttpClient httpClient;	
 	
 	static {
+		
 		SchemeRegistry schemeRegistry = new SchemeRegistry();
 		schemeRegistry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(), 80));		
 		HttpParams clientParams = new BasicHttpParams();
